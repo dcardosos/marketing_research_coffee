@@ -1,0 +1,23 @@
+Gênero,Idade,Ocupação,grau_de_escolaridade,consumo_café,razões,razões_hábito,razões_sabor_residual,razões_sabor_aroma,razões_azia,razões_dor_cabeça,razões_saude,razões_restr_med,razões_outros
+Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Não,Não consumo por falta de hábito;Não consumo pois sinto azia,True,False,False,True,False,False,False,False
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Não,Não gosto do sabor/aroma;Não gosto do sabor residual;Não consumo por falta de hábito;Não consumo pois sinto azia;Não consumo pois sinto dor de cabeça;Não consumo pois acredito que faça mal à saúde;Outros motivos,True,True,True,True,True,True,False,True
+Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Não,Não gosto do sabor/aroma;Não gosto do sabor residual,False,True,True,False,False,False,False,False
+Masculino,Entre 25 e 30,Estagiário(a),Superior Incompleto,Não,Não consumo por falta de hábito;Não consumo pois sinto azia,True,False,False,True,False,False,False,False
+Feminino,Entre 18 e 24,Estudante,Superior Incompleto,Não,Não gosto do sabor residual;Não consumo por falta de hábito;Não consumo pois sinto azia,True,True,False,True,False,False,False,False
+Feminino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Não,Não gosto do sabor/aroma;Não consumo pois sinto azia;Não consumo pois acredito que faça mal à saúde,False,False,True,True,False,True,False,False
+Feminino,Entre 18 e 24,Estudante,Superior Incompleto,Não,Não gosto do sabor/aroma;Não consumo por falta de hábito;Não consumo pois sinto dor de cabeça,True,False,True,False,True,False,False,False
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Não,Não gosto do sabor/aroma;Não gosto do sabor residual;Não consumo por falta de hábito,True,True,True,False,False,False,False,False
+Feminino,Menor de 18 anos,Estudante,1º grau incompleto,Não,Não gosto do sabor/aroma,False,False,True,False,False,False,False,False
+Masculino,Entre 18 e 24,Funcionário(a) de empresa privada,Superior Completo,Não,Não gosto do sabor/aroma,False,False,True,False,False,False,False,False
+Masculino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Não,Outros motivos,False,False,False,False,False,False,False,True
+Masculino,Entre 18 e 24,Funcionário(a) de empresa privada,Pós-graduação incompleta,Não,Não gosto do sabor residual;Não consumo pois acredito que faça mal à saúde,False,True,False,False,False,True,False,False
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Não,Não gosto do sabor/aroma,False,False,True,False,False,False,False,False
+Feminino,Entre 25 e 30,Gestor(a),Superior Completo,Não,Não gosto do sabor residual,False,True,False,False,False,False,False,False
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Não,Não gosto do sabor residual;Não consumo por falta de hábito,True,True,False,False,False,False,False,False
+Masculino,Entre 18 e 24,Funcionário(a) de empresa privada,Superior Completo,Não,Não gosto do sabor/aroma;Não gosto do sabor residual;Não consumo por falta de hábito,True,True,True,False,False,False,False,False
+Feminino,Entre 18 e 24,Funcionário(a) de empresa privada,Superior Completo,Não,Não gosto do sabor/aroma,False,False,True,False,False,False,False,False
+Feminino,Entre 18 e 24,Estudante,Superior Incompleto,Não,Não consumo pois acredito que faça mal à saúde;Outros motivos,False,False,False,False,False,True,False,True
+Masculino,Entre 18 e 24,Funcionário(a) de empresa privada,2º grau completo,Não,Não gosto do sabor/aroma,False,False,True,False,False,False,False,False
+Feminino,Entre 18 e 24,Estudante,Superior Incompleto,Não,Não gosto do sabor/aroma,False,False,True,False,False,False,False,False
+Feminino,Menor de 18 anos,Estudante,2º grau incompleto,Não,Não gosto do sabor residual,False,True,False,False,False,False,False,False
+Feminino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Não,Não gosto do sabor/aroma;Não gosto do sabor residual;Não consumo por falta de hábito;Outros motivos,True,True,True,False,False,False,False,True
