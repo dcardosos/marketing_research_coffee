@@ -4,9 +4,9 @@ library(dplyr)
 library(hrbrthemes)
 
 
-df_sim <- read.csv("Respostas_sim_café.csv")
-df_nao <- read.csv("Respostas_não_café.csv")
-df_geral <- read.csv("Perfil_respostas.csv")
+df_sim <- read.csv("respostas_sim_cafe.csv")
+df_nao <- read.csv("respostas_não_cafe.csv")
+df_geral <- read.csv("perfil_respostas.csv")
 
 dim(df_geral) # 111 respostas
 
