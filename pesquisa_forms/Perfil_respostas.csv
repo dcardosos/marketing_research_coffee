@@ -1,0 +1,112 @@
+Gênero,Idade,Ocupação,grau_de_escolaridade,consumo_café
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Feminino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Não
+Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Feminino,Entre 25 e 30,Autônomo(a),Superior Completo,Sim
+Feminino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Feminino,Entre 25 e 30,Autônomo(a),Superior Completo,Sim
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Feminino,Entre 31 e 40,Autônomo(a),2º grau completo,Sim
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Não
+Masculino,Entre 25 e 30,Estagiário(a),Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Não
+Feminino,Entre 41 e 50,Outra,2º grau completo,Sim
+Masculino,Entre 25 e 30,Estagiário(a),Superior Incompleto,Não
+Feminino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Feminino,Entre 18 e 24,Estudante,Superior Incompleto,Não
+Masculino,Entre 31 e 40,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Feminino,Entre 31 e 40,Trabalho exclusivamente com afazeres domésticos,Superior Completo,Sim
+Feminino,Entre 18 e 24,Estudante,Outra,Sim
+Feminino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Não
+Feminino,Entre 18 e 24,Estudante,Superior Incompleto,Não
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Masculino,Entre 31 e 40,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 18 e 24,Estudante,2º grau incompleto,Sim
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Não
+Feminino,Menor de 18 anos,Estudante,1º grau incompleto,Não
+Feminino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Feminino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Feminino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Feminino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Feminino,Entre 18 e 24,Estagiário(a),2º grau completo,Sim
+Feminino,Entre 41 e 50,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 25 e 30,Desempregado(a),2º grau completo,Sim
+Masculino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Sim
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Funcionário(a) de empresa privada,Superior Completo,Não
+Masculino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Não
+Masculino,Entre 18 e 24,Funcionário(a) de empresa privada,Pós-graduação incompleta,Não
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Não
+Masculino,Entre 31 e 40,Funcionário(a) de empresa privada,Pós-graduação completa,Sim
+Feminino,Entre 31 e 40,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 25 e 30,Gestor(a),Superior Completo,Não
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Não
+Feminino,Entre 18 e 24,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 18 e 24,Funcionário(a) de empresa privada,Superior Incompleto,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Pós-graduação completa,Sim
+Masculino,Entre 25 e 30,Funcionário(a) de empresa privada,2º grau completo,Sim
+Masculino,Entre 31 e 40,Funcionário(a) de empresa privada,Pós-graduação completa,Sim
+Masculino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Incompleto,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Pós-graduação completa,Sim
+Masculino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Incompleto,Sim
+Masculino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Pós-graduação completa,Sim
+Feminino,Entre 41 e 50,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Pós-graduação incompleta,Sim
+Masculino,Entre 31 e 40,Funcionário(a) de empresa privada,Superior Completo,Sim
+Masculino,Entre 25 e 30,Funcionário(a) de empresa privada,Pós-graduação incompleta,Sim
+Masculino,Entre 31 e 40,Funcionário(a) de empresa privada,Superior Completo,Sim
+Masculino,Entre 18 e 24,Funcionário(a) de empresa privada,Superior Completo,Não
+Masculino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 31 e 40,Funcionário(a) de empresa privada,2º grau completo,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Sim
+Masculino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Sim
+Masculino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Sim
+Masculino,Entre 18 e 24,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 31 e 40,Funcionário(a) de empresa privada,Superior Incompleto,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Pós-graduação completa,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,2º grau completo,Sim
+Feminino,Entre 18 e 24,Funcionário(a) de empresa privada,Superior Completo,Não
+Masculino,Entre 31 e 40,Funcionário(a) de empresa privada,Superior Completo,Sim
+Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Sim
+Masculino,Entre 31 e 40,Funcionário(a) de empresa privada,Pós-graduação incompleta,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Incompleto,Sim
+Feminino,Entre 18 e 24,Estudante,Superior Incompleto,Não
+Feminino,Entre 31 e 40,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 25 e 30,Desempregado(a),2º grau completo,Sim
+Feminino,Entre 41 e 50,Funcionário(a) de empresa privada,Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Funcionário(a) de empresa privada,2º grau completo,Não
+Masculino,Entre 31 e 40,Funcionário(a) de empresa privada,Superior Completo,Sim
+Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Masculino,Entre 25 e 30,Estagiário(a),Superior Incompleto,Sim
+Feminino,Entre 18 e 24,Estudante,Superior Incompleto,Não
+Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Feminino,Entre 31 e 40,Funcionário(a) de empresa privada,2º grau completo,Sim
+Feminino,Menor de 18 anos,Estudante,2º grau incompleto,Não
+Feminino,Entre 18 e 24,Estagiário(a),2º grau completo,Sim
+Feminino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Pós-graduação completa,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Pós-graduação incompleta,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Sim
+Masculino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Completo,Sim
+Feminino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Não
+Masculino,Entre 31 e 40,Funcionário(a) de empresa privada,Superior Completo,Sim
+Masculino,Entre 31 e 40,Outra,Pós-graduação completa,Sim
+Feminino,Entre 18 e 24,Funcionário(a) de empresa privada,Superior Incompleto,Sim
+Masculino,Entre 31 e 40,Funcionário(a) de empresa privada,Superior Incompleto,Sim
+Feminino,Entre 25 e 30,Funcionário(a) de empresa privada,Superior Incompleto,Sim
+Feminino,Entre 18 e 24,Funcionário(a) de empresa privada,2º grau completo,Sim
