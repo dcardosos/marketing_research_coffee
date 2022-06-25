@@ -63,8 +63,6 @@ purrr::map_dfr(1:109, get_request_info) |>
 df |> 
   dplyr::relocate(
     names:score,
-    .before = roaster_location)
-
-df |> 
+    .before = roaster_location) |> 
   readr::write_csv('coffee_reviews/coffe_reviews_infos.csv')
 
