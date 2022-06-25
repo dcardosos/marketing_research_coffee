@@ -64,5 +64,5 @@ df |>
   dplyr::relocate(
     names:score,
     .before = roaster_location) |> 
-  readr::write_csv('coffee_reviews/coffe_reviews_infos.csv')
+  readr::write_csv('dados/coffe_reviews_infos.csv')
 

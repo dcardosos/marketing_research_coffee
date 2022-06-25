@@ -2,7 +2,7 @@
 #library(tidymodels)
 
 
-df <- readr::read_csv('coffee_review/dados/coffe_reviews_infos.csv')
+df <- readr::read_csv('dados/coffe_reviews_infos.csv')
 
 # tratando o agtron number ----------------------------------------------------
 t1 <- df |> 
@@ -49,4 +49,4 @@ tab |>
     col = price,
     into = c('country_money', 'price_value'),
     sep = ' ') |> 
-  readr::write_csv('coffee_review/dados/wip_clean_coffe_reviews.csv')
+  readr::write_csv('dados/wip_clean_coffe_reviews.csv')
