@@ -2,11 +2,12 @@ library(tidyverse)
 library(ggplot2)
 library(dplyr)
 library(hrbrthemes)
+readr::rea
 
+df_sim <- readr::read_csv("respostas_sim_cafe.csv")
+df_nao <- readr::read_csv("respostas_nao_cafe.csv")
+df_geral <- readr::read_csv("perfil_respostas.csv")
 
-df_sim <- read.csv("respostas_sim_cafe.csv")
-df_nao <- read.csv("respostas_não_cafe.csv")
-df_geral <- read.csv("perfil_respostas.csv")
 
 dim(df_geral) # 111 respostas
 
@@ -75,7 +76,35 @@ df_geral %>%
 names(df_nao)
 
 #Razões pelas quais não consomem café
-df_nao %>%  
-  ggplot(aes(razões)) + 
-  geom_bar() + coord_flip()
+
+contagem_razoes <- df_nao %>% 
+  dplyr::select("razões_hábito","razões_sabor_residual","razões_sabor_aroma", "razões_azia","razões_dor_cabeça","razões_saude") %>% 
+  dplyr::summarize_all(sum) %>% 
+  tidyr::pivot_longer(everything(), names_to = 'razoes',values_to = "Total")
+
+contagem_razoes$prop <- round((contagem_razoes$Total / dim(df_nao)[1]) * 100,2)
+
+contagem_razoes %>% 
+  ggplot(aes(x=razoes,y=prop)) + 
+  geom_col() +
+  labs(x='Razões para não tomar café',y='Porporção (%)',title = 'Razões para não tomar café')+
+  geom_text(
+    aes(x = razoes, y = prop,label=prop),
+    position = position_dodge(width = 1),
+    vjust = -0.5, size = 4
+  ) +
+  theme_classic()
+  
+contagem_razoes %>% 
+  ggplot(aes(x=razoes,y=Total)) + 
+  geom_col(fill='brown') +
+  labs(x='Razões para não tomar café',y='Total',title = 'Razões para não tomar café')+
+  theme_classic()
+  
+#não consigo pivotar essa tabela 
+df_nao %>% 
+  group_by(Gênero) %>% 
+  dplyr::select("razões_hábito","razões_sabor_residual","razões_sabor_aroma", "razões_azia","razões_dor_cabeça","razões_saude") %>% 
+  dplyr::summarize_all(sum)  %>% 
+  pivot_longer(cols = Gênero, names_to = 'razoes',values_to = "Total")
 
