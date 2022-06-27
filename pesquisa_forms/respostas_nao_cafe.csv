@@ -1,4 +1,4 @@
-Gênero,Idade,Ocupação,grau_de_escolaridade,consumo_café,razões,razões_hábito,razões_sabor_residual,razões_sabor_aroma,razões_azia,razões_dor_cabeça,razões_saude,razões_restr_med,razões_outros
+Gênero,Idade,Ocupação,escolaridade,consumo_café,razões,razões_hábito,razões_sabor_residual,razões_sabor_aroma,razões_azia,razões_dor_cabeça,razões_saude,razões_restr_med,razões_outros
 Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Não,Não consumo por falta de hábito;Não consumo pois sinto azia,True,False,False,True,False,False,False,False
 Masculino,Entre 18 e 24,Estudante,Superior Incompleto,Não,Não gosto do sabor/aroma;Não gosto do sabor residual;Não consumo por falta de hábito;Não consumo pois sinto azia;Não consumo pois sinto dor de cabeça;Não consumo pois acredito que faça mal à saúde;Outros motivos,True,True,True,True,True,True,False,True
 Masculino,Entre 18 e 24,Estagiário(a),Superior Incompleto,Não,Não gosto do sabor/aroma;Não gosto do sabor residual,False,True,True,False,False,False,False,False
