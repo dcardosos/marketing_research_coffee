@@ -1,5 +1,5 @@
 #library(ggplot2)
-#library(tidymodels)
+library(tidymodels)
 
 
 df <- readr::read_csv('dados/coffe_reviews_infos.csv')
@@ -41,12 +41,101 @@ tab <- t1 |>
 
 # tratando os prices ----------------------------------------------------------
 tab |> 
-  tidyr::separate(
-    col = est_price,
-    into = c('price', 'quantity'),
-    sep  = '/') |> 
-  tidyr::separate(
-    col = price,
-    into = c('country_money', 'price_value'),
-    sep = ' ') |> 
-  readr::write_csv('dados/wip_clean_coffe_reviews.csv')
+  tidyr::separate(est_price, c('price', 'quantity'), sep  = '/') |> 
+  tidyr::separate(price, c('country_money', 'price_value'), sep = ' ')  |> 
+  tidyr::separate(quantity, c('qtd_value', 'type'), sep = ' ') |>
+  dplyr::mutate(
+    price_value = dplyr::case_when(
+      is.na(price_value) ~ country_money,
+      TRUE ~ price_value),
+    country_money = dplyr::case_when(
+      country_money == price_value ~ 'NA',
+      TRUE ~ country_money)) |>
+  dplyr::select(country_money, price_value, qtd_value, type) |> 
+  dplyr::count(type) 
+  
+  
+  
+
+
+
+# rand forest --------------------------------------------------------------------
+dados <- tab |> 
+  dplyr::mutate(roast_level = dplyr::case_when(
+    is.na(roast_level) ~ 'Medium-Light',
+    TRUE ~ roast_level)) |>
+  dplyr::select(score, roast_level, roast_color, aroma, acidity_structure, body, flavor, aftertaste, bean_surface)
+
+set.seed(123)
+tab_split <- initial_split(dados)
+train <- training(tab_split)
+test <- testing(tab_split)
+
+set.seed(234)
+folds <- vfold_cv(train)
+
+# 
+usemodels::use_glmnet(score ~ ., train)
+#
+
+ranger_recipe <- 
+  recipe(formula = score ~ ., data = train) %>% 
+  step_string2factor(one_of("roast_level", "roast_color", "bean_surface")) %>%
+  step_novel(all_nominal_predictors()) |> 
+  step_impute_linear(aroma, acidity_structure, body, flavor, aftertaste, impute_with = imp_vars(roast_level)) |> 
+  step_impute_mode(bean_surface, roast_color)
+  
+ranger_spec <- 
+  rand_forest(mtry = tune(), min_n = tune(), trees = 100) %>% 
+  set_mode("regression") %>% 
+  set_engine("ranger") 
+
+ranger_workflow <- 
+  workflow() %>% 
+  add_recipe(ranger_recipe) %>% 
+  add_model(ranger_spec) 
+
+set.seed(6964)
+doParallel::registerDoParallel()
+ranger_tune <-
+  tune_grid(
+    ranger_workflow, 
+    resamples = folds, 
+    grid = 10)
+
+
+show_best(ranger_tune, metric = "rmse")
+show_best(ranger_tune, metric = "rsq")
+
+autoplot(ranger_tune)
+
+final_rf <- ranger_workflow |> 
+  finalize_workflow(select_best(ranger_tune))
+
+final_rf
+
+
+df_fit <- last_fit(final_rf, tab_split)
+df_fit
+
+collect_metrics(df_fit)
+
+collect_predictions(df_fit) |> 
+  ggplot(aes(score, .pred)) + 
+  geom_abline(lty = 2, color = "gray50") +
+  geom_point(alpha = 0.5, color = "midnightblue") + 
+  coord_fixed()
+
+library(vip)
+
+imp_spec <- ranger_spec |> 
+  finalize_model(select_best(ranger_tune)) |> 
+  set_engine("ranger", importance = "permutation")
+
+
+workflow() |> 
+  add_recipe(ranger_recipe) |> 
+  add_model(imp_spec) |> 
+  fit(train) |> 
+  pull_workflow_fit() |> 
+  vip(aesthetic = list(alpha = 0.8, fill = "midnightblue"))
