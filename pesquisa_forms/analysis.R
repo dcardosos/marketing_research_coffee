@@ -405,6 +405,7 @@ df_sim %>%
 #----------------------------------------------------------------------------------------
 # Data Science
 rules <- readr::read_csv('dados/respostas_sim_cafe.csv', col_types = 'c') |> 
+  dplyr::select(-consumo_café) |> 
   as("transactions") |> 
   arules::apriori(parameter = list(sup = 0.2, conf = 0.8))
 
@@ -414,7 +415,8 @@ arules::inspect(head(rules, n = 10, by = c("confidence", "lift")))
 
 rules |> 
   as('data.frame') |> 
+  tidyr::separate(rules, c('lhs', 'rhs'), '=>') |> 
   tibble::as_tibble() |> 
   readr::write_csv('dados/forms_rules.csv')
 
-
+readr::read_csv('dados/forms_rules.csv')
