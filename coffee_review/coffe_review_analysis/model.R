@@ -1,5 +1,8 @@
+library(magrittr)
+library(tidymodels)
 # model ---------------------------------------------------------------------
-dados <- 'wip_clean_coffe_reviews.csv' |> 
+dados <- 'dados/wip_clean_coffe_reviews.csv' |> 
+  readr::read_csv() |> 
   dplyr::mutate(roast_level = dplyr::case_when(
     is.na(roast_level) ~ 'Medium-Light',
     TRUE ~ roast_level)) |>
