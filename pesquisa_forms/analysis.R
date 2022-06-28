@@ -404,4 +404,16 @@ df_sim %>%
 
 #----------------------------------------------------------------------------------------
 # Data Science
-readr::read_csv('dados/respostas_sim_cafe.csv', col_types = 'c')
+rules <- readr::read_csv('dados/respostas_sim_cafe.csv', col_types = 'c') |> 
+  as("transactions") |> 
+  arules::apriori(parameter = list(sup = 0.2, conf = 0.8))
+
+summary(rules)
+
+arules::inspect(head(rules, n = 10, by = c("confidence", "lift")))
+
+rules |> 
+  arules::inspect() |> 
+  readr::read_csv('dados/forms_rules.csv')
+
+
