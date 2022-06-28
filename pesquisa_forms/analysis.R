@@ -1,17 +1,8 @@
 library(GGally)
-library(ggpubr)
-library(gridExtra)
-library(tidyverse)
 library(ggplot2)
-library(dplyr)
 library(hrbrthemes)
 library(ggplot2)
 library(ggalluvial)
-library(viridis)
-library(RColorBrewer)
-library(tidyr)
-library(superheat)
-library(stringr)
 library(magrittr)
 
 replace_domestico <- function(tb) {
@@ -413,4 +404,4 @@ df_sim %>%
 
 #----------------------------------------------------------------------------------------
 # Data Science
-
+readr::read_csv('dados/respostas_sim_cafe.csv', col_types = 'c')
