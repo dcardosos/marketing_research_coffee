@@ -413,7 +413,8 @@ summary(rules)
 arules::inspect(head(rules, n = 10, by = c("confidence", "lift")))
 
 rules |> 
-  arules::inspect() |> 
-  readr::read_csv('dados/forms_rules.csv')
+  as('data.frame') |> 
+  tibble::as_tibble() |> 
+  readr::write_csv('dados/forms_rules.csv')
 
 
